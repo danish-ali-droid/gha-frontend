@@ -3,5 +3,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN ci --omit=dev
+RUN npm ci --omit=dev
+
 CMD [ "Node","src /index.html" ]
