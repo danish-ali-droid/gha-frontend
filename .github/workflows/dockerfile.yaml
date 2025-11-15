@@ -21,4 +21,4 @@ jobs:
           with:
             context: .
             push: true
-            tags: ${{ secrets.DOCKER_USERNAME }}/gha-frontend:latest
+            tags: ${{ secrets.USER_NAME }}/gha-frontend:latest
